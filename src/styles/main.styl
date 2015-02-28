@@ -1,0 +1,111 @@
+@import '../../bower_components/normalize.styl/normalize.styl'
+@import './portfolio_fonts.styl'
+@import 'nib'
+
+color = {
+	header: {
+		main: #3c5eae
+		lightmain: #889ed0
+		link: #ff9944
+		text: #dee4f2
+	}
+	main: #fbfbff
+	link: #3c5eae //#0e3591
+	text: #2c3e50
+}
+a
+	color: color.header.link
+	text-decoration: none
+body
+	background: color.main
+	color: color.text
+	font-family: 'Raleway', sans-serif;
+h2
+	margin: 0
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+.info
+	.description 
+		margin: 0
+.main-header
+	background: color.header.main
+	color: color.header.text
+	text-align: center
+	a
+		color: color.header.link
+.main-layout
+	padding: 0 .5em
+.references
+	[class^=icon-]
+		display: inline-block
+		padding: .3em
+		vertical-align: top
+		&:before
+			display: inline-block
+			font-size: 1.2em
+			padding-right: .5em
+			vertical-align: top
+	.icon-npm
+		&:before
+			font-size: 0.9em
+			margin-top: .3em
+	.info-page-speed
+		padding-left: 1.5em
+		li
+			padding: .3em 0 .2em
+.project
+	margin-bottom: 4em
+	.info
+		border-left: solid .3em color.header.lightmain
+		padding-left: .5em
+	.tags
+		font-size: .8em
+		li
+			background: color.header.text
+			border: solid 1px color.header.lightmain
+			border-radius: .3em
+			display: inline-block
+			padding: .3em
+			margin: .5em .2em 0
+			padding: .3em .5em
+.social-links
+	padding-bottom: .5em
+	li
+		display: inline-block
+		font-size: 2em
+		margin: 0 .5em
+		vertical-align: middle
+		a
+			display: block
+		.icon-npm
+			font-size: 0.7em
+.user-image
+	background: color.header.lightmain
+	//border: solid 1px black
+	border-radius: 22%
+	box-sizing: border-box
+	display: inline-block
+	padding: .3em
+	img
+		//border: solid 1px black
+		border-radius: 20%
+		display: block
+.user-name
+	font-size: 1.3em
+.user-description
+	font-size: 1.1em
+.title
+	h3
+		//background: color.header.main
+		//border-radius: .3em
+		//display: inline-block
+		font-size: 1.5em
+		//margin: 0
+		//padding: .3em
+		a
+			color: color.header.main
+@media screen and (min-width: 400px)
+	.main-layout
+		padding: 0 1em

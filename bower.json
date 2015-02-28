@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "authors": [
+    "Xavier Garcia Buils <xgbuils@gmail.com>"
+  ],
+  "description": "Xavier Garcia Buils portfolio",
+  "keywords": [
+    "porfolio"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
