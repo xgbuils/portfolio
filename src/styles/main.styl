@@ -32,6 +32,8 @@ ul
 .main-header
 	background: color.header.main
 	color: color.header.text
+	overflow: hidden
+	position: relative
 	text-align: center
 	a
 		color: color.header.link
@@ -54,6 +56,7 @@ ul
 	.info-page-speed
 		padding-left: 1.5em
 		li
+			display: block
 			padding: .3em 0 .2em
 .project
 	margin-bottom: 4em
@@ -71,7 +74,7 @@ ul
 			margin: .5em .2em 0
 			padding: .3em .5em
 .social-links
-	padding-bottom: .5em
+	padding-bottom: 1em
 	li
 		display: inline-block
 		font-size: 2em
@@ -81,12 +84,17 @@ ul
 			display: block
 		.icon-npm
 			font-size: 0.7em
+.user
+	margin: .5em
+.user-description
+	font-size: 1.1em
+	line-height: 1.3em
 .user-image
 	background: color.header.lightmain
-	//border: solid 1px black
 	border-radius: 22%
 	box-sizing: border-box
 	display: inline-block
+	margin: 0
 	padding: .3em
 	img
 		//border: solid 1px black
@@ -94,7 +102,7 @@ ul
 		display: block
 .user-name
 	font-size: 1.3em
-.user-description
+.user-little-description
 	font-size: 1.1em
 .title
 	h3
@@ -109,3 +117,33 @@ ul
 @media screen and (min-width: 400px)
 	.main-layout
 		padding: 0 1em
+@media screen and (min-width: 550px)
+	body
+		font-size: 1.1em
+	.main-layout
+		width: 550px
+		margin 0 auto
+@media screen and (min-width: 800px)
+	.main-header
+		margin-bottom: 1em
+	.social-links
+		padding: 1em 0 1.5em
+	.user
+		width: 45%
+		border-right: solid 5px color.header.lightmain
+		margin: 1em
+	.user-description
+		box-sizing: border-box
+		margin-right: 2em
+		padding: 0 1.6em 0 3.6em
+		position: absolute
+		right: 0
+		top: 0
+		width: 53%
+		color: color.header.text
+		p
+			margin-top: 6%
+@media screen and (min-width: 1000px)
+	.user-description
+		p
+			margin-top: 10%
