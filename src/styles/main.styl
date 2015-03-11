@@ -2,6 +2,10 @@
 @import './portfolio_fonts.styl'
 @import 'nib'
 
+base = {
+	fontSize: 16px
+}
+
 color = {
 	header: {
 		main: #3c5eae
@@ -16,11 +20,14 @@ color = {
 a
 	color: color.header.link
 	text-decoration: none
+html
+	font-size: base.fontSize
 body
 	background: color.main
 	color: color.text
 	font-family: 'Raleway', sans-serif;
 h2
+	font-size: 2em
 	margin: 0
 ul
 	list-style-type: none
@@ -29,8 +36,9 @@ ul
 .info
 	.description 
 		margin: 0
-.main-header
+.header-wrapper
 	background: color.header.main
+.main-header
 	color: color.header.text
 	overflow: hidden
 	position: relative
@@ -116,6 +124,8 @@ ul
 		font-size: 1.1em
 	.main-layout
 		width: 550px
+	.main-header
+	.main-layout
 		margin 0 auto
 @media screen and (min-width: 800px)
 	.main-header
@@ -141,3 +151,29 @@ ul
 	.user-description
 		p
 			margin-top: 10%
+@media screen and (min-width: 1300px)
+	h2
+		font-size: 2em
+	.main-header
+		.user
+			margin-left: 0
+	.main-header
+	.main-layout
+		width: 1100px
+	.portfolio
+		font-size: 0
+		h2
+			font-size: base.fontSize
+			font-size: 2.5rem
+	.project
+		font-size: base.fontSize
+		font-size: 1rem
+		display: inline-block
+		text-align: left
+		vertical-align: top
+		width: 525px
+		&:nth-child(odd)
+			margin-left: 50px
+	.user-description
+		left: 50%
+		width: 600px
